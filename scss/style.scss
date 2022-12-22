@@ -23,6 +23,38 @@ a {
 }
 
 .hero {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    list-style-type: none;
+  }
+  a {
+    color: text-color-picker($primary-color);
+  }
+
+  a:hover {
+    color: $secondary-color;
+  }
+}
+
+  &-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+    img {
+      width: 50%;
+    }
+
+    h1 {
+      font-size: 50px;
+      line-height: 1.2;
+    }
+
   // This is where the bulk of the SCSS styling needs to be done
 
   // Take a look at the other files we've built already. How can they be useful here?
